@@ -1,0 +1,71 @@
+.logo{
+  padding-left: 2rem;
+  width: 4rem;
+  cursor: pointer;
+  filter: contrast(0);
+  @media (max-width : 767px){
+    padding: 0 1rem;
+  }
+}
+.aLogo{
+  @media (max-width : 767px){
+    padding: 0;
+  }
+}
+
+
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+    @media (max-width : 767px){
+      display: none;
+  }
+  visibility: hidden;
+  }
+
+  
+  .search > div {
+    display: inline-block;
+    position: relative;
+    filter: drop-shadow(0 1px #0091c2);
+  }
+  
+  .search > div:after {
+    content: "";
+    background: white;
+    width: 1px;
+    height: 7px;
+    position: absolute;
+    top: 15px;
+    transform: rotate(135deg);
+  }
+  
+  .search > div > input {
+    color: white;
+    background: transparent;
+    width: 5px;
+    height: 5px;
+    padding: 5px;
+    border: solid 1px white;
+    outline: none;
+    border-radius: 35px;
+    transition: width 0.5s;
+  }
+  
+  .search > div > input::placeholder {
+    color: #efefef;
+    opacity: 0;
+    transition: opacity 150ms ease-out;
+  }
+  
+  .search > div > input:focus::placeholder {
+    opacity: 1;
+  }
+  
+  .search > div > input:focus,
+  .search > div > input:not(:placeholder-shown) {
+    width: 250px;
+  }
+  

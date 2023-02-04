@@ -1,0 +1,26 @@
+{
+  "name": "first-test-site-for-finall",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get your application up and running.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w sass/main.scss -o public/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://guntsadze@bitbucket.org/guntsadze/finally-first-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/guntsadze/finally-first-project/issues"
+  },
+  "homepage": "https://bitbucket.org/guntsadze/finally-first-project#readme",
+  "dependencies": {
+    "json-server": "^0.17.0",
+    "live-server": "^1.1.0",
+    "node-sass": "^7.0.1"
+  },
+  "type": "module"
+}

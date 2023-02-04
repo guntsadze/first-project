@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "username": "guntsadze",
+      "password": "11",
+      "id": 1
+    },
+    {
+      "username": "111",
+      "password": "111",
+      "id": 2
+    },
+    {
+      "username": "guntsadze1",
+      "password": "11",
+      "id": 3
+    },
+    {
+      "username": "guntsadze3",
+      "password": "11",
+      "id": 4
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Mercedes-Benz SL",
+      "price": "200 000$"
+    },
+    {
+      "id": 2,
+      "title": "Mercedes-Benz SL",
+      "price": "300 000$"
+    }
+  ]
+}

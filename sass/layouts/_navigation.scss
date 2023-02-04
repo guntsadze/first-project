@@ -1,0 +1,47 @@
+.main-navigation{
+    display: flex;
+    margin-left: 5rem;
+    @media (max-width : 1025px){
+        margin-left: 0;
+        
+    }
+    @media (max-width : 767px){
+        position: fixed;
+        right: 100%;
+        top: 100%;
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+        background: #121211b9;
+        backdrop-filter: blur(7px);
+        text-align: center;
+        transition: all .5s;
+    }
+    
+}
+.activeBurger{
+    right: 0;
+}
+.main-navigation.show{
+    @media (max-width : 767px){
+        display: flex;
+        
+    }
+}
+.main-navigation li , a {
+    @include textDecNone;
+    padding: 0 0.4rem;
+    font-size: 1.2rem;
+    color: rgba(202, 182, 145, 0.865);
+    transition: 0.2s;
+    @media (max-width : 767px){
+        padding: 1rem;
+    }
+    
+}
+.main-navigation li:hover{
+    color: rgba(245, 245, 245, 0.857);
+    text-shadow: 0 0 1px rgba(245, 245, 245, 0.846);
+    transform: scale(1.02);
+
+}

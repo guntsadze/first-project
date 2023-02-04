@@ -1,0 +1,55 @@
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+@import "./animations/animation";
+@import "./base/untitles";
+@import "./components/buttons";
+@import "./components/card";
+@import "./components/popup";
+@import "./components/search";
+@import "./layouts/footer-clock";
+@import "./layouts/footer";
+@import "./layouts/header";
+@import "./layouts/navigation";
+@import "./pages/about";
+@import "./pages/card";
+@import "./pages/cars";
+@import "./pages/contact";
+@import "./pages/home";
+@import "./pages/profile";
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+                    
+                   
+         
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Lato', sans-serif;
+    background-image: url(../../assets/backgrounds/body/bodyBackground.jpeg);
+    background-blend-mode: soft-light;
+    background-size: cover;
+}  
+                      
+    
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+
+
+
+
+
+

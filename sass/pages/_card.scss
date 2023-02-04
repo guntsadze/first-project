@@ -1,0 +1,65 @@
+#CARD{
+    @include mainPaddingTop;
+    padding-bottom: 20%;
+}
+.carts{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    width: 70vw;
+}
+.carts div {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 1%;
+
+    @media (max-width : 767px){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+}
+.carts span{
+    margin: 0 5%;
+    padding: 5px;
+    border-radius: 5%;
+    background-color: rgba(70, 68, 63, 0.241);
+}
+.cart-container{
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border: 1px solid black;
+    @include boxShadowCars;
+}
+#CART div{
+    height: 20vh;
+    width: 70vw;
+    @media (max-width : 767px){
+        width: 100%
+    }
+}
+#CART div div img{
+    height: 100%;
+}
+#CART div div span{
+    font-size: 1.6rem;
+}
+
+.removeBtn{
+    margin-left: 10%;
+}
+
+
+
+.totPrice{
+    font-size: 1.2rem;
+    color: wheat;
+    padding-left: 1%
+}
+.emptyCart{
+    @include centerWithAbsolute;
+    font-size: 3rem;
+    color: wheat;
+}

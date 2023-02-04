@@ -1,0 +1,43 @@
+#CONTACT{
+    @include mainPaddingTop;
+    @media (max-width : 390px){
+        padding-top: 19%;
+    }
+}
+.googleMap{
+    @media (max-width : 767px){
+        width: 100vw;
+    }
+}
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    @media (max-width : 920px ){
+        display: flex;
+        flex-direction: column;
+    }
+}
+.contact-info-2{
+    position: relative;
+    font-size: 3rem;
+    text-align: center;
+    color: rgba(250, 235, 215, 0.616);
+    cursor: pointer;
+    transition: 0.3s;
+    animation: moveToLeft 2s forwards;
+}
+.contact-info-2:hover{
+    transform: scale(1.1);
+    color: rgba(90, 190, 90, 0.84);
+}
+.contact-info-2 b{
+    font-size: 1.3rem;
+}
+.contact-info-2 p{
+    font-size: 1.1rem;
+}
+.map{
+    position: relative;
+    animation: moveToRight 2s forwards;
+}

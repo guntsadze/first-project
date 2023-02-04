@@ -1,0 +1,83 @@
+#HOME{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+#HEADER{
+    @include headFooterPadding;
+    background-color: var(--headerBackground);
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(7px);
+    z-index: 10;
+    animation: fadeIn 0.5s linear both;
+    @media (max-width : 767px){
+        padding: 0;
+        margin: 0;
+    }
+}
+.header{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: .7s;
+}
+
+
+.showModal{
+    animation: zoomInForLogin .3s linear both;
+    visibility: visible!important;
+    z-index: 12;
+    
+}
+.showBackdrop{
+    animation: fadeIn .3s linear both;
+    visibility: visible!important;
+    z-index: 11;
+    opacity: 1;
+    
+}
+.closeAnimation{
+    animation: fadeInTo .3s linear both;
+}
+
+.auth-cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5%;
+    @media (max-width : 767px){
+        // display: none;
+    }
+}
+.cart{
+    padding: 1px;
+    font-size: 2rem;
+    color: gray;
+    cursor: pointer;
+    position: relative;
+    padding-right: 5%;
+}
+.cartNumber{
+    position: absolute;
+    font-size: 0.7rem;
+    color: #f9ff00fc;
+    top: -7px;
+    left: -10%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #3c46368a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+

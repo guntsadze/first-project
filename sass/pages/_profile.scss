@@ -1,0 +1,8 @@
+.user-info{
+    @include mainPaddingTop;
+    height: 600px;
+}
+#profile-username{
+    font-size: 3rem;
+    color: wheat;
+}

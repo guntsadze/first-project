@@ -1,0 +1,67 @@
+@keyframes fadeIn{
+    from { opacity: 0;};
+    to {opacity: 1;}
+}
+@keyframes zoomIn{
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
+@keyframes zoomInForLogin{
+    0%{
+        left: 50%;
+        top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    }
+    100%{
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+@keyframes moveInfadeIn{
+    0%{top: 55%; opacity: 0;}
+    100%{top: 50%; opacity: 1;}
+}
+@keyframes moveToRight{
+    from { left: -15%;}
+    to { left: 0%;}
+}
+@keyframes moveToLeftCars{
+    from { left: 100%;}
+    to { left: 0%;}
+}
+@keyframes moveToLeft{
+    from { right: -15%;}
+    to { right: 0%;}
+}
+@keyframes slideDown{
+    form { height: 0;}
+    to {height: 100%;}
+}
+
+@keyframes scrollAnimation {
+    0%,100%{
+        filter : hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+
+}
+
+
+
+
+@keyframes fadeInTo{
+    0%{
+        left: 50%;
+        top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    }
+    100%{
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0);
+    }
+}
+

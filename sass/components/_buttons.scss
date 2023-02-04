@@ -1,0 +1,118 @@
+#LOGIN-BTN, #REGISTER-BTN, #LOGOUT {
+    @include authBtn;
+    @include heightWidth100;
+    padding: 0.2rem 0.4rem;
+    margin: 0.1rem 0.2rem; 
+    letter-spacing: 7px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 4px;
+    @media (max-width : 767px){
+        width: 5rem;
+        height: 2rem;
+        font-size: 0.6rem;
+        letter-spacing: 2px;
+    }
+    
+}
+#CLOSE-BTN , #CLOSE-BTN-REG{
+    float: right;
+    margin-right: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: wheat;
+}
+#AUTH-BTNS{
+    @include authFlex;
+    
+}
+#AUTH-BTNS.show{
+    display: flex;
+    justify-content: end;
+}
+#LOGIN-BTN-BTN , #REGISTER-BTN-BTN{
+    @include authBtn;
+    margin-top: 1.7rem;
+    padding: 0.4rem;
+    font-size: 1rem;
+    letter-spacing: 4px;
+}
+
+
+#burgerBtn{
+    display:none;
+
+    @media (max-width : 767px){
+        width: 35px;
+        height: 35px;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 5px 5px;
+        align-items: center;
+        cursor: pointer;
+    }
+}
+#burgerBtn div{
+    background-color: wheat;
+    width: 70%;
+    height: 2px;
+}
+
+.burgerAuthBtn{
+    display: none;
+}
+.burgerAuthBtnActive{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.filter-btn {
+    margin-left: 1%;
+    margin-bottom: 1%;
+    background-color: transparent;
+    backdrop-filter: blur(11px);
+    color: #bcc6abd1;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 1px solid black;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+
+.filter-btn:hover {
+  box-shadow: rgba(90, 95, 92, 0.35) 0 -25px 18px -14px inset,rgba(142, 164, 151, 0.25) 0 1px 2px,rgba(99, 114, 105, 0.25) 0 2px 4px,rgba(151, 170, 158, 0.25) 0 4px 8px,rgba(117, 138, 125, 0.25) 0 8px 16px,rgba(121, 142, 129, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+
+
+
+
+

@@ -1,0 +1,120 @@
+#LOGIN, #REGISTER{
+    @include centerWithAbsolute;
+    @include boxShadow;
+    backdrop-filter: blur(13px);
+    background-color: transparent;
+    height: 20rem;
+    width: 20rem;
+    visibility: hidden;
+    position: fixed;
+    
+}
+#REGISTER{
+    height: 25rem !important;
+    width: 25rem !important;
+}
+.container{
+    @include centerWithAbsolute;
+}
+.login-name , .register-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    color: #bd964eeb
+}
+.login-input{
+    padding: 0.3rem 0;
+}
+.login-input label{
+    font-size: 1rem;
+    color: wheat;
+}  
+.login-input input{
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    background: transparent;
+    outline: none;
+    border: 0.1rem solid var(--inputBorderColor);
+}
+.forgot-pass a{
+    font-size: 0.9rem;
+}
+#invalid-password , #register-error{
+    display: none;
+    color: red;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+#username-d{
+    font-size: 1.2rem;
+    color: wheat;
+}
+#BACKDROP{
+    @include backdrop;
+}
+.sidebar{
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    background-color: wheat;
+    transition: all .5s;
+    backdrop-filter: blur(4px);
+    background-color: #433a3a17;
+}
+.sidebar-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar-div div input{
+    margin: 5px;
+}
+.sidebar h3{
+    font-size: 1.2rem;
+    color: wheat;
+}
+.hidden{
+    left: -300px;
+}
+
+.shown{
+    left:0;
+}
+
+.sidebar-backdrop{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: var(--backdropBackground);
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+
+.backdrop-hidden{
+    visibility: hidden;
+}
+
+.backdrop-shown{
+    visibility: visible;
+}
+
+
+.search-none{
+    @include centerWithAbsolute;
+    visibility: hidden;
+    font-size: 1.6rem;
+    color: wheat;
+}
+
+
+
+
+
